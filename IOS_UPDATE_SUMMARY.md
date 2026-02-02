@@ -28,7 +28,7 @@ This update modernizes the iOS configuration for the Koel Player Flutter app to 
 
 **Rationale:**
 - `CADisableMinimumFrameDurationOnPhone` is a legacy setting from older iOS versions
-- `UIStatusBarStyleDefault` provides better forward compatibility
+- `UIStatusBarStyleDefault` adapts automatically to the system's light/dark mode settings, providing better user experience across different appearance modes. The previous `UIStatusBarStyleDarkContent` was specifically for dark content on a light background, which doesn't adapt well to dark mode.
 
 ### 3. Added Privacy Manifest
 **Files Created:**
